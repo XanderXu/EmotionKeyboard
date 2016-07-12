@@ -1,0 +1,10 @@
+PODS:
+  - TYAttributedLabel (2.6.1)
+
+DEPENDENCIES:
+  - TYAttributedLabel
+
+SPEC CHECKSUMS:
+  TYAttributedLabel: 4785820dc8d7935446f49f1de4daa0f99ebcba8a
+
+COCOAPODS: 0.39.0
