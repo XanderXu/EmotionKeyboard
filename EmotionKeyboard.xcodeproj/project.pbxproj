@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6801D9F736DB5B49515EDF58 /* libPods-EmotionKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BABC72387F4268891E759A5 /* libPods-EmotionKeyboard.a */; };
+		6C1C80FD1D5CB6D40090E978 /* AutoLayoutAttributedLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1C80FA1D5CB6D40090E978 /* AutoLayoutAttributedLabelCell.m */; };
+		6C1C80FE1D5CB6D40090E978 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1C80FC1D5CB6D40090E978 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6C1C81011D5CB70F0090E978 /* MessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1C81001D5CB70F0090E978 /* MessageTableViewController.m */; };
 		6C2295601D35240500FCF5C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C22955F1D35240500FCF5C4 /* main.m */; };
 		6C2295631D35240500FCF5C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2295621D35240500FCF5C4 /* AppDelegate.m */; };
 		6C2295661D35240500FCF5C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2295651D35240500FCF5C4 /* ViewController.m */; };
@@ -122,9 +125,7 @@
 		6C2296771D35253D00FCF5C4 /* WUEmoticonsKeyboardKeyItemGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C22966A1D35253D00FCF5C4 /* WUEmoticonsKeyboardKeyItemGroupView.m */; };
 		6C2296781D35253D00FCF5C4 /* WUEmoticonsKeyboardKeysPageFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C22966C1D35253D00FCF5C4 /* WUEmoticonsKeyboardKeysPageFlowLayout.m */; };
 		6C2296791D35253D00FCF5C4 /* WUEmoticonsKeyboardToolsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C22966E1D35253D00FCF5C4 /* WUEmoticonsKeyboardToolsView.m */; };
-		6C22967C1D35290B00FCF5C4 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C22967B1D35290B00FCF5C4 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6C22967E1D35296600FCF5C4 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C22967D1D35296600FCF5C4 /* libicucore.tbd */; };
-		6C2296811D35319400FCF5C4 /* AutoLayoutAttributedLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2296801D35319400FCF5C4 /* AutoLayoutAttributedLabelCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,12 @@
 /* Begin PBXFileReference section */
 		36C5B246D84C3B9A0230B327 /* Pods-EmotionKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmotionKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmotionKeyboard/Pods-EmotionKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		4BABC72387F4268891E759A5 /* libPods-EmotionKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmotionKeyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C1C80F91D5CB6D40090E978 /* AutoLayoutAttributedLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutAttributedLabelCell.h; sourceTree = "<group>"; };
+		6C1C80FA1D5CB6D40090E978 /* AutoLayoutAttributedLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutAttributedLabelCell.m; sourceTree = "<group>"; };
+		6C1C80FB1D5CB6D40090E978 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		6C1C80FC1D5CB6D40090E978 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		6C1C80FF1D5CB70F0090E978 /* MessageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewController.h; sourceTree = "<group>"; };
+		6C1C81001D5CB70F0090E978 /* MessageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewController.m; sourceTree = "<group>"; };
 		6C22955B1D35240500FCF5C4 /* EmotionKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmotionKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C22955F1D35240500FCF5C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6C2295611D35240500FCF5C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -283,11 +290,7 @@
 		6C22966C1D35253D00FCF5C4 /* WUEmoticonsKeyboardKeysPageFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WUEmoticonsKeyboardKeysPageFlowLayout.m; sourceTree = "<group>"; };
 		6C22966D1D35253D00FCF5C4 /* WUEmoticonsKeyboardToolsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WUEmoticonsKeyboardToolsView.h; sourceTree = "<group>"; };
 		6C22966E1D35253D00FCF5C4 /* WUEmoticonsKeyboardToolsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WUEmoticonsKeyboardToolsView.m; sourceTree = "<group>"; };
-		6C22967A1D35290B00FCF5C4 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
-		6C22967B1D35290B00FCF5C4 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		6C22967D1D35296600FCF5C4 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
-		6C22967F1D35319400FCF5C4 /* AutoLayoutAttributedLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutAttributedLabelCell.h; sourceTree = "<group>"; };
-		6C2296801D35319400FCF5C4 /* AutoLayoutAttributedLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutAttributedLabelCell.m; sourceTree = "<group>"; };
 		FD16A5A2BE3AAFA8FD35684F /* Pods-EmotionKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmotionKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmotionKeyboard/Pods-EmotionKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -335,6 +338,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6C1C80F81D5CB6D40090E978 /* MessageTableView */ = {
+			isa = PBXGroup;
+			children = (
+				6C1C80F91D5CB6D40090E978 /* AutoLayoutAttributedLabelCell.h */,
+				6C1C80FA1D5CB6D40090E978 /* AutoLayoutAttributedLabelCell.m */,
+				6C1C80FB1D5CB6D40090E978 /* RegexKitLite.h */,
+				6C1C80FC1D5CB6D40090E978 /* RegexKitLite.m */,
+				6C1C80FF1D5CB70F0090E978 /* MessageTableViewController.h */,
+				6C1C81001D5CB70F0090E978 /* MessageTableViewController.m */,
+			);
+			path = MessageTableView;
+			sourceTree = "<group>";
+		};
 		6C2295521D35240500FCF5C4 = {
 			isa = PBXGroup;
 			children = (
@@ -365,11 +381,7 @@
 				6C22965A1D35253D00FCF5C4 /* HPGrowingTextView */,
 				6C22965F1D35253D00FCF5C4 /* WUEmoticonsKeyboard */,
 				6C22964C1D35252700FCF5C4 /* CustomEmoticonsKeyBoard */,
-				6C2295911D3524C900FCF5C4 /* Resource */,
-				6C22967A1D35290B00FCF5C4 /* RegexKitLite.h */,
-				6C22967B1D35290B00FCF5C4 /* RegexKitLite.m */,
-				6C22967F1D35319400FCF5C4 /* AutoLayoutAttributedLabelCell.h */,
-				6C2296801D35319400FCF5C4 /* AutoLayoutAttributedLabelCell.m */,
+				6C1C80F81D5CB6D40090E978 /* MessageTableView */,
 				6C2295611D35240500FCF5C4 /* AppDelegate.h */,
 				6C2295621D35240500FCF5C4 /* AppDelegate.m */,
 				6C2295641D35240500FCF5C4 /* ViewController.h */,
@@ -378,6 +390,7 @@
 				6C22956A1D35240500FCF5C4 /* Assets.xcassets */,
 				6C22956C1D35240500FCF5C4 /* LaunchScreen.storyboard */,
 				6C22956F1D35240500FCF5C4 /* Info.plist */,
+				6C2295911D3524C900FCF5C4 /* Resource */,
 				6C22955E1D35240500FCF5C4 /* Supporting Files */,
 			);
 			path = EmotionKeyboard;
@@ -857,19 +870,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C1C80FE1D5CB6D40090E978 /* RegexKitLite.m in Sources */,
 				6C2296731D35253D00FCF5C4 /* WUEmoticonsKeyboard.m in Sources */,
-				6C2296811D35319400FCF5C4 /* AutoLayoutAttributedLabelCell.m in Sources */,
 				6C2295661D35240500FCF5C4 /* ViewController.m in Sources */,
 				6C2296541D35252700FCF5C4 /* EmoticonsKeyboardPressedCellPopupView.m in Sources */,
 				6C2296791D35253D00FCF5C4 /* WUEmoticonsKeyboardToolsView.m in Sources */,
 				6C2295631D35240500FCF5C4 /* AppDelegate.m in Sources */,
+				6C1C80FD1D5CB6D40090E978 /* AutoLayoutAttributedLabelCell.m in Sources */,
 				6C2296761D35253D00FCF5C4 /* WUEmoticonsKeyboardKeyItemGroup.m in Sources */,
 				6C2296721D35253D00FCF5C4 /* HPTextViewInternal.m in Sources */,
 				6C2296771D35253D00FCF5C4 /* WUEmoticonsKeyboardKeyItemGroupView.m in Sources */,
 				6C2296741D35253D00FCF5C4 /* WUEmoticonsKeyboardKeyCell.m in Sources */,
+				6C1C81011D5CB70F0090E978 /* MessageTableViewController.m in Sources */,
 				6C2296711D35253D00FCF5C4 /* HPGrowingTextView.m in Sources */,
 				6C2296531D35252700FCF5C4 /* EmoticonsKeyboardBuilder.m in Sources */,
-				6C22967C1D35290B00FCF5C4 /* RegexKitLite.m in Sources */,
 				6C2295601D35240500FCF5C4 /* main.m in Sources */,
 				6C2296781D35253D00FCF5C4 /* WUEmoticonsKeyboardKeysPageFlowLayout.m in Sources */,
 				6C2296751D35253D00FCF5C4 /* WUEmoticonsKeyboardKeyItem.m in Sources */,
