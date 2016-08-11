@@ -19,7 +19,7 @@
         //create a keyboard of default size
         WUEmoticonsKeyboard *keyboard = [WUEmoticonsKeyboard keyboard];
         
-        //Icon keys
+        //加载表情plist
         NSDictionary *emojiDict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"emoji" ofType:@"plist"]];
         NSMutableArray *emojiItems = [NSMutableArray array];
         [emojiDict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
@@ -28,13 +28,14 @@
             emojiItem.textToInput = [NSString stringWithFormat:@"[%@]",obj];
             [emojiItems addObject:emojiItem];
         }];
+        
         WUEmoticonsKeyboardKeysPageFlowLayout *imageIconsLayout = [[WUEmoticonsKeyboardKeysPageFlowLayout alloc] init];
         imageIconsLayout.itemSize = CGSizeMake(35, (142-35)/3.0);
         imageIconsLayout.itemSpacing = 10;
         imageIconsLayout.lineSpacing = 15;
         imageIconsLayout.pageContentInsets = UIEdgeInsetsMake(5,5,0,5);
         
-        //Icon key group
+        //Icon key group图片表情组
         WUEmoticonsKeyboardKeyItemGroup *imageIconsGroup = [[WUEmoticonsKeyboardKeyItemGroup alloc] init];
         imageIconsGroup.keyItems = emojiItems;
         imageIconsGroup.keyItemsLayout = imageIconsLayout;
@@ -47,7 +48,7 @@
         imageIconsGroup.image = keyboardEmotionImage;
         imageIconsGroup.selectedImage = keyboardEmotionSelectedImage;
         
-        //Text keys
+        //Text keys颜文字plist
         NSArray *textKeys = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"EmotionTextKeys" ofType:@"plist"]];
         
         NSMutableArray *textKeyItems = [NSMutableArray array];
@@ -58,7 +59,7 @@
             [textKeyItems addObject:keyItem];
         }
         
-        //Text key group
+        //Text key group颜文字组
         WUEmoticonsKeyboardKeysPageFlowLayout *textIconsLayout = [[WUEmoticonsKeyboardKeysPageFlowLayout alloc] init];
         textIconsLayout.itemSize = CGSizeMake(80, 142/3.0);
         textIconsLayout.itemSpacing = 0;

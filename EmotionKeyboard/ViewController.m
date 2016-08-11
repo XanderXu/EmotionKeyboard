@@ -37,12 +37,12 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //图文混排子控制器
     self.messageVC = [[MessageTableViewController alloc] init];
     [self.view addSubview:self.messageVC.tableView];
     self.messageVC.tableView.frame = CGRectMake(10, 20, self.view.bounds.size.width - 20, 300);
     
-    
+    //赋值,自动刷新,滚动到最后一行
     self.messageVC.msgList = self.msgList;
 
     //加载输入框
@@ -79,7 +79,7 @@
 
 
 #pragma mark - GrowingInputView输入框代理
-//输入框改变高度
+//输入框改变高度(行数改变时)
 - (void)growingInputView:(GrowingInputView *)growingInputView didChangeHeight:(CGFloat)height keyboardVisible:(BOOL)keyboardVisible
 {
     _keyboardVisible = keyboardVisible;
@@ -119,12 +119,12 @@
         _growingInputView.placeholder = @"我来说点什么吧~";
     }
 }
-//切换Emoji
+//切换Emoji,不清空现有内容
 - (void)growingInputViewEmojiBtnClick:(GrowingInputView *)growingInputView
 {
     _canResetGrowingInputView = NO;
 }
-//隐藏键盘时还要做的事
+//隐藏键盘时还要做的其他事,在这个代理方法中实现
 -(void)growingInputView:(GrowingInputView *)growingInputView didRecognizer:(id)sender {
     
 }
